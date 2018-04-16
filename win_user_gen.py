@@ -15,7 +15,7 @@
 # HISTORY:
 #
 # Date(YYYY/MM/DD):     Version:        Modified By:    Description of Change:
-# 2018/04/16            1.0           Juan Ortega     First version of script
+# 2018/04/16             1.0            Juan Ortega     First version of script
 
 from subprocess import check_output
 import logging
