@@ -1,9 +1,15 @@
 
 import subprocess
-
+from faker import Faker
 
 def main():
-  pass
+  cmd = "net user /add{}".format(username)
+  for _ in range(10000):
+    try:
+      username = fake.user_name
+      run_win_cmd(cmd)
+    except:
+       print(username + ": already exists"
 
 def run_win_cmd(cmd):
   result = []
@@ -18,3 +24,5 @@ def run_win_cmd(cmd):
       print(line)
   if errcode is not None:
       raise Exception('cmd %s failed, see above for details', cmd)
+
+if __name__ == "__main__": main()
